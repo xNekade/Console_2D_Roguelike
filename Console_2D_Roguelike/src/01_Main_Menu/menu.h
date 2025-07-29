@@ -25,11 +25,6 @@ public:
     Menu() : select(MAX_OPTIONS, DEFAULT_SELECT_SYMBOL),
              options{ "Start", "Settings", "Exit" } {}
 
-    /*****  General constructor. *****/
-    // That should later replace '-' with '>',
-    // so needs to be updated...
-    // Menu(char &selected, std::int32_t index) : select() {}
-
     void clearScreen();
     void display_menu();
     void update_display(std::size_t index, char input);
