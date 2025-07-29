@@ -30,9 +30,11 @@ public:
     // so needs to be updated...
     // Menu(char &selected, std::int32_t index) : select() {}
 
+    void clearScreen();
     void display_menu();
-    void update_display(std::size_t index);
+    void update_display(std::size_t index, char input);
     char select_option(std::size_t &index);
+    void option_choosen(std::size_t &index);
 
 private:
 
